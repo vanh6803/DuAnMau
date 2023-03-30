@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Sách"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="#FF5722"
+            />
+
+        <EditText
+            android:id="@+id/ed_update_tenSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/boder_edittext"
+            android:hint="Nhập tên sách"
+            android:padding="12dp"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/ed_update_giaThue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_edittext"
+            android:padding="12dp"
+            android:hint="Nhập giá thuê"
+            android:textSize="14dp"
+            android:inputType="number"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            />
+
+        <Spinner
+            android:id="@+id/spn_loaiSach_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@android:color/transparent"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="35dp"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:id="@+id/btn_cancel_sach_update"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CANCEL"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/boder_buton"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_update_sach"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="update"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/boder_buton"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

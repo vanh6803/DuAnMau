@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_edit_thanhvien">
+
+            <TextView
+                android:id="@+id/tv_mathanhvien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mã thành viên"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_tenthanhvien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tên thành viên"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_gioitinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="giới tính"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/tv_namsinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="năm sinh"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_edit_thanhvien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_toLeftOf="@id/img_delete_thanhvien"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_delete_thanhvien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_highlight_off_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

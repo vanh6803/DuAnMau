@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Thêm thanh viên"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="#FF5722"
+            />
+
+
+        <EditText
+            android:id="@+id/ed_add_tenTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_edittext"
+            android:padding="12dp"
+            android:hint="Nhập tên thành viên"
+            android:textSize="14dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_add_namSinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_edittext"
+            android:padding="12dp"
+            android:hint="Nhập năm sinh"
+            android:textSize="14dp"
+            android:inputType="number"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới tính: "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+
+
+            <RadioButton
+                android:id="@+id/rdo_nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textSize="14dp"
+                android:textColor="#717171"
+                android:text="Nam"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/rdo_nu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="14dp"
+                android:textColor="#717171"
+                android:text="Nữ"
+                />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="35dp"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:id="@+id/btn_cancel_thanhvien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CANCEL"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/boder_buton"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                />
+
+            <Button
+                android:id="@+id/btn_add_thanhvien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="save"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/boder_buton"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

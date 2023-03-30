@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_edit_phieumuon">
+
+            <TextView
+                android:id="@+id/tv_maPM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="mã phiếu mượn"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_tennguoimuon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tên người mượn"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tv_tensachmuon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tên sách mượn"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tv_tienthue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tiền thuê"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tv_ngaythue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ngày thuê"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_chk_trasach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="trả sách"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_edit_phieumuon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_toLeftOf="@id/img_delete_phieumuon"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_delete_phieumuon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_highlight_off_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
